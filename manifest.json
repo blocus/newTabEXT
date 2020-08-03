@@ -1,10 +1,24 @@
 {
+  "manifest_version": 2,
   "name": "New Tab extention",
+  "short_name": "Short Name",
   "version": "1.0.0",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "96": "icon96.png",
+    "128": "icon128.png",
+    "256": "icon256.png",
+    "512": "icon512.png"
+  },
   "description": "Custom new tab",
+  "offline_enabled": true,
+  "incognito": "split",
+  "version_name": "initial",
   "permissions": ["tabs", "storage"],
   "chrome_url_overrides": {
     "newtab": "newtab.html"
-  },
-  "manifest_version": 2
+  }
 }
