@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+:root {
+  font-size: 20px;
+}
+
+* {
+  margin: 0px;
+  font-size: 20px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  /* font-family: sans-serif; */
+  font-family: "Oxygen", sans-serif;
+  /* font-weight: lighter; */
+  right: 0px;
+  position: absolute;
+  background: #313131;
+}
+
+#app {
+  transform: translate(0px, -50%);
+  margin-top: 50vh;
+}
+
+h1 {
+  color: #cbe4e7;
+  margin: 1rem 0px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#config-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 0px 0px 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+#config-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#config h1 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+#config fieldset {
+  border: 2px solid rgba(0, 0, 0, 0.52);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#config fieldset legend {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#config div {
+  margin: 10px 0px;
+  display: flex;
+}
+
+#config div label {
+  width: 200px;
+}
+#config div input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  width: calc(100% - 200px - 2rem);
+}
+#config div input[type="range"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  width: calc(100% - 200px - 2rem);
+}
+
+#config div textarea {
+  padding: 5px;
+  border-radius: 5px;
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  width: calc(100% - 200px - 2rem);
+}
+
+#config div select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  width: calc(100% - 200px - 2rem);
+}
+
+#config {
+  overflow: auto;
+  display: none;
+  z-index: 9999;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  position: fixed;
+  height: 90vh;
+  width: 90vw;
+  top: 5vh;
+  right: 5vw;
+}
+
+#config-drop {
+  display: none;
+  z-index: 999;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.27);
+}
+
+#timer {
+  color: #e392bf;
+  font-size: 3rem;
+  margin: 1rem auto;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+#inspire {
+  width: 80%;
+  margin: 0px auto;
+  padding: 1rem;
+  color: #ddbfad;
+  text-align: center;
+}
+
+#inspire p {
+  quotes: "“" "”" "‘" "’";
+  font-size: 1.5rem;
+}
+
+#inspire p:before {
+  content: open-quote;
+}
+
+#inspire p:after {
+  content: close-quote;
+}
+#inspire span {
+  display: block;
+  text-align: right;
+  font-size: 1rem;
+  color: #c4c4c4;
+}
